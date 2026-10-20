@@ -1,0 +1,54 @@
+<!-- Fitur Catat Transaksi (Pemasukan & Pengeluaran) -->
+    <section class="card tracker-card">
+      <h2><i class="fa-solid fa-receipt"></i> Catat Transaksi (Setor / Pengeluaran)</h2>
+      <form id="transaction-form" class="transaction-form">
+        <div class="input-group">
+          <label for="trx-date">Tanggal</label>
+          <input type="date" id="trx-date" required>
+        </div>
+        <div class="input-group">
+          <label for="trx-action">Jenis Transaksi</label>
+          <select id="trx-action" required>
+            <option value="in">➕ Setor / Menabung (Uang Masuk)</option>
+            <option value="out">➖ Pengeluaran / Beli (Uang Keluar)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="trx-type">Kategori Pos</label>
+          <select id="trx-type" required>
+            <option value="jajan">Uang Jajan</option>
+            <option value="tabungan">Tabungan Masa Depan</option>
+            <option value="darurat">Dana Darurat</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="trx-desc">Keterangan</label>
+          <input type="text" id="trx-desc" placeholder="Ex: Beli cilok / Ambil tabungan" required>
+        </div>
+        <div class="input-group">
+          <label for="trx-amount">Nominal (Rp)</label>
+          <input type="number" id="trx-amount" placeholder="Ex: 10000" required min="1">
+        </div>
+        <button type="submit" class="btn-secondary"><i class="fa-solid fa-plus"></i> Simpan Transaksi</button>
+      </form>
+
+      <h3 class="sub-title"><i class="fa-solid fa-list-ul"></i> Riwayat Catatan Transaksi</h3>
+      <div class="table-responsive">
+        <table class="transaction-table">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Jenis</th>
+              <th>Pos Kategori</th>
+              <th>Keterangan</th>
+              <th>Nominal</th>
+            </tr>
+          </thead>
+          <tbody id="transaction-list">
+            <tr>
+              <td colspan="5" class="empty-table">Belum ada transaksi tercatat.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
