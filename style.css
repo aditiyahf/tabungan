@@ -1,0 +1,28 @@
+/* Custom Style untuk Pemasukan & Pengeluaran */
+.text-success {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.text-danger {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.badge-in {
+  background: #ecfdf5;
+  color: #047857;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-out {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
